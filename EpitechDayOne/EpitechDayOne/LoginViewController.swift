@@ -29,9 +29,16 @@ class LoginViewController: UIViewController {
                             completion: {[weak self] (result) in
                                 switch result {
                                 case .success :
-                                    let homeVC = UIStoryboard(name: "Main",
-                                                              bundle: nil).instantiateViewController(withIdentifier: "homeVC")
-                                    self?.navigationController?.pushViewController(homeVC, animated: true)
+                                    if let homeVC = UIStoryboard(name: "Main",
+                                                                 bundle: nil).instantiateViewController(withIdentifier: "homeVC") as? HomeViewController {
+                                        let router = HomeRouterImp(view: homeVC)
+                                        var presenter = HomePresenterImp(view: homeVC, router: router)
+                                        let interactor = HomeInteractorImp(presenter: presenter, resultsManager: ResultsManagerImp.sharedInstance)
+                                        presenter.setInteractor(interactor: interactor)
+                                        homeVC.presenter = presenter
+                                        self?.navigationController?.pushViewController(homeVC, animated: true)
+                                    }
+                                    
                                 case .failure(let error):
                                     print(error)
                                 }

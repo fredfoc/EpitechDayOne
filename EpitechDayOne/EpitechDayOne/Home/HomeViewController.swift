@@ -11,16 +11,17 @@ import Alamofire
 import RxSwift
 import RxCocoa
 
-protocol HomeView {
+protocol HomeView: class {
     func receiveData(results: [UserModel])
     func displayError(error: String)
+    var searchTextField: UITextField?{get}
 }
 
 class HomeViewController: UIViewController {
     
     var presenter: HomePresenterImp?
     
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchTextField: UITextField?
     @IBOutlet private weak var collectionView: UICollectionView!
     private var displayResults = [UserModel]()
     

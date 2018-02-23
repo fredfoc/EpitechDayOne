@@ -16,13 +16,32 @@ enum HomeResult {
 
 protocol HomeInteractor {
     func loadData()
+    func getUserAtIndexPath(indexPath: IndexPath) -> UserModel?
+    func getFilteredResults(searchText: String) -> [UserModel]?
 }
 
 struct HomeInteractorImp {
-    var presenter: HomePresenter?
+    private var presenter: HomePresenter?
+    private var resultsManager: ResultsManager?
+    init(presenter: HomePresenter?, resultsManager: ResultsManager?) {
+        self.presenter = presenter
+        self.resultsManager = resultsManager
+    }
 }
 
 extension HomeInteractorImp: HomeInteractor {
+    
+    func getUserAtIndexPath(indexPath: IndexPath) -> UserModel? {
+        guard indexPath.row < resultsManager?.results.count ?? 0 else {
+            return nil
+        }
+        return resultsManager?.results[indexPath.row]
+    }
+    
+    func setResults(results: [UserModel]) {
+        resultsManager?.results = results
+    }
+    
     func loadData() {
         Alamofire
             .request("https://api.randomuser.me/?nat=US&results=15")
@@ -38,10 +57,15 @@ extension HomeInteractorImp: HomeInteractor {
                             return UserModel(name: "No Name")
                         })
                         self.presenter?.dataLoaded(result: HomeResult.success(results))
+                        self.setResults(results: results)
                     }
                 case .failure(let error):
-                    self.presenter?.dataLoaded(results: HomeResult.failure(error))
+                    self.presenter?.dataLoaded(result: HomeResult.failure(error))
                 }
         }
+    }
+    
+    func getFilteredResults(searchText: String) -> [UserModel]? {
+        return resultsManager?.results.filter { $0.name.hasPrefix(searchText) }
     }
 }
