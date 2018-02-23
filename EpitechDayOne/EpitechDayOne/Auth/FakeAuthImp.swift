@@ -13,7 +13,7 @@ struct FakeAuthImp {
 }
 
 extension FakeAuthImp: EpitechAuth {
-    func signInUser(email: String, password: String, completion: @escaping (ResultAuth) -> ()) {
+    func signInUser(email: String?, password: String?, completion: @escaping (ResultAuth) -> ()) {
         completion(ResultAuth.success("fredfocmac@gmail.com"))
     }
 }

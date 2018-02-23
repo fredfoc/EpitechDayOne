@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import RxSwift
+import RxCocoa
 
 class DisplayResultsViewController: UIViewController {
     
@@ -17,8 +19,6 @@ class DisplayResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        results.append(UserModel(name: "Fred"))
-        results.append(UserModel(name: "Simon"))
         Alamofire
             .request("https://api.randomuser.me/?nat=US&results=5")
             .responseJSON { (response) in

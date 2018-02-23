@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let rootViewController = window?.rootViewController as? UINavigationController,
             let loginViewController = rootViewController.topViewController as? LoginViewController {
-            loginViewController.authImp = FakeAuthImp()
+            loginViewController.authImp = EpitechAuthImp()
         }
         
         return true

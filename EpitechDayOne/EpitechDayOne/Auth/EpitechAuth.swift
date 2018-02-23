@@ -8,11 +8,17 @@
 
 import Foundation
 
+enum ErrorAuth: Error {
+    case emailIsNil
+    case passwordIsNil
+    case emailIsInvalid
+}
+
 enum ResultAuth {
     case success(String)
     case failure(Error)
 }
 
 protocol EpitechAuth {
-    func signInUser(email:String, password: String, completion: @escaping (ResultAuth) -> ())
+    func signInUser(email:String?, password: String?, completion: @escaping (ResultAuth) -> ())
 }

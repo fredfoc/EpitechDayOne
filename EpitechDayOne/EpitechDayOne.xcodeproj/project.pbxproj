@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D723D17C0D424F90EC0279C /* Pods_EpitechDayOneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D8662AB3DA73EA8CC6B694 /* Pods_EpitechDayOneTests.framework */; };
 		9A7C7FE920400B230085CEE1 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FE820400B230085CEE1 /* SignViewController.swift */; };
 		9A7C7FEC204016700085CEE1 /* EpitechAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FEB204016700085CEE1 /* EpitechAuth.swift */; };
 		9A7C7FEE204017A70085CEE1 /* EpitechAuthImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FED204017A70085CEE1 /* EpitechAuthImp.swift */; };
 		9A7C7FF020401C620085CEE1 /* FakeAuthImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FEF20401C620085CEE1 /* FakeAuthImp.swift */; };
+		9A7C7FF3204024860085CEE1 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FF2204024860085CEE1 /* String+Utils.swift */; };
+		9A7C8003204028470085CEE1 /* TestEmailIsValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */; };
 		9AFB0ADC203EBFEC0082EF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */; };
 		9AFB0ADE203EBFEC0082EF86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */; };
 		9AFB0AE1203EBFEC0082EF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADF203EBFEC0082EF86 /* Main.storyboard */; };
@@ -24,14 +27,31 @@
 		A99B01DD64A16D1D1D07C9DF /* Pods_EpitechDayOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E248C9C00F3E5CBDF1F507B /* Pods_EpitechDayOne.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9A7C7FFD204027DC0085CEE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AFB0AD0203EBFEC0082EF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AFB0AD7203EBFEC0082EF86;
+			remoteInfo = EpitechDayOne;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2DDFA82B21E980D196D3CA94 /* Pods-EpitechDayOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechDayOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechDayOne/Pods-EpitechDayOne.debug.xcconfig"; sourceTree = "<group>"; };
+		41C51DE41EC91DAE68711403 /* Pods-EpitechDayOneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechDayOneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechDayOneTests/Pods-EpitechDayOneTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AD296FBDFFBD5439A25DF47 /* Pods-EpitechDayOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechDayOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechDayOne/Pods-EpitechDayOne.release.xcconfig"; sourceTree = "<group>"; };
 		4E248C9C00F3E5CBDF1F507B /* Pods_EpitechDayOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpitechDayOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EBFCDC28D226A46BF436B73 /* Pods-EpitechDayOneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechDayOneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechDayOneTests/Pods-EpitechDayOneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91D8662AB3DA73EA8CC6B694 /* Pods_EpitechDayOneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EpitechDayOneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7C7FE820400B230085CEE1 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		9A7C7FEB204016700085CEE1 /* EpitechAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpitechAuth.swift; sourceTree = "<group>"; };
 		9A7C7FED204017A70085CEE1 /* EpitechAuthImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpitechAuthImp.swift; sourceTree = "<group>"; };
 		9A7C7FEF20401C620085CEE1 /* FakeAuthImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAuthImp.swift; sourceTree = "<group>"; };
+		9A7C7FF2204024860085CEE1 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		9A7C7FF8204027DC0085CEE1 /* EpitechDayOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpitechDayOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7C7FFC204027DC0085CEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEmailIsValid.swift; sourceTree = "<group>"; };
 		9AFB0AD8203EBFEC0082EF86 /* EpitechDayOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpitechDayOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +67,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9A7C7FF5204027DC0085CEE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D723D17C0D424F90EC0279C /* Pods_EpitechDayOneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AFB0AD5203EBFEC0082EF86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +91,8 @@
 			children = (
 				2DDFA82B21E980D196D3CA94 /* Pods-EpitechDayOne.debug.xcconfig */,
 				4AD296FBDFFBD5439A25DF47 /* Pods-EpitechDayOne.release.xcconfig */,
+				7EBFCDC28D226A46BF436B73 /* Pods-EpitechDayOneTests.debug.xcconfig */,
+				41C51DE41EC91DAE68711403 /* Pods-EpitechDayOneTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -71,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				4E248C9C00F3E5CBDF1F507B /* Pods_EpitechDayOne.framework */,
+				91D8662AB3DA73EA8CC6B694 /* Pods_EpitechDayOneTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,10 +116,28 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		9A7C7FF1204024740085CEE1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A7C7FF2204024860085CEE1 /* String+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A7C7FF9204027DC0085CEE1 /* EpitechDayOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A7C7FFC204027DC0085CEE1 /* Info.plist */,
+				9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */,
+			);
+			path = EpitechDayOneTests;
+			sourceTree = "<group>";
+		};
 		9AFB0ACF203EBFEC0082EF86 = {
 			isa = PBXGroup;
 			children = (
 				9AFB0ADA203EBFEC0082EF86 /* EpitechDayOne */,
+				9A7C7FF9204027DC0085CEE1 /* EpitechDayOneTests */,
 				9AFB0AD9203EBFEC0082EF86 /* Products */,
 				4DFB37E783B20C6198C2797D /* Pods */,
 				843E95C0B1F6286A8D6973CD /* Frameworks */,
@@ -99,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFB0AD8203EBFEC0082EF86 /* EpitechDayOne.app */,
+				9A7C7FF8204027DC0085CEE1 /* EpitechDayOneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +156,7 @@
 		9AFB0ADA203EBFEC0082EF86 /* EpitechDayOne */ = {
 			isa = PBXGroup;
 			children = (
+				9A7C7FF1204024740085CEE1 /* Utils */,
 				9A7C7FEA204016540085CEE1 /* Auth */,
 				9AFB0AF9203F26590082EF86 /* GoogleService-Info.plist */,
 				9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */,
@@ -126,6 +177,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9A7C7FF7204027DC0085CEE1 /* EpitechDayOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A7C7FFF204027DC0085CEE1 /* Build configuration list for PBXNativeTarget "EpitechDayOneTests" */;
+			buildPhases = (
+				0D169BEFC6C335E3D2C0CAF5 /* [CP] Check Pods Manifest.lock */,
+				9A7C7FF4204027DC0085CEE1 /* Sources */,
+				9A7C7FF5204027DC0085CEE1 /* Frameworks */,
+				9A7C7FF6204027DC0085CEE1 /* Resources */,
+				387206D35431B4F964B05021 /* [CP] Embed Pods Frameworks */,
+				97E1FED6FF9874C1891F9AF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A7C7FFE204027DC0085CEE1 /* PBXTargetDependency */,
+			);
+			name = EpitechDayOneTests;
+			productName = EpitechDayOneTests;
+			productReference = 9A7C7FF8204027DC0085CEE1 /* EpitechDayOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9AFB0AD7203EBFEC0082EF86 /* EpitechDayOne */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AFB0AEA203EBFEC0082EF86 /* Build configuration list for PBXNativeTarget "EpitechDayOne" */;
@@ -156,6 +228,12 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Fred Fauquette";
 				TargetAttributes = {
+					9A7C7FF7204027DC0085CEE1 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9AFB0AD7203EBFEC0082EF86;
+					};
 					9AFB0AD7203EBFEC0082EF86 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -176,11 +254,19 @@
 			projectRoot = "";
 			targets = (
 				9AFB0AD7203EBFEC0082EF86 /* EpitechDayOne */,
+				9A7C7FF7204027DC0085CEE1 /* EpitechDayOneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9A7C7FF6204027DC0085CEE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AFB0AD6203EBFEC0082EF86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +281,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D169BEFC6C335E3D2C0CAF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		130CD5CAD5219122577924E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +326,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		387206D35431B4F964B05021 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpitechDayOneTests/Pods-EpitechDayOneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E1FED6FF9874C1891F9AF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EpitechDayOneTests/Pods-EpitechDayOneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E8CE2386D80EADE0CEDDFBA0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,10 +374,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9A7C7FF4204027DC0085CEE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7C8003204028470085CEE1 /* TestEmailIsValid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AFB0AD4203EBFEC0082EF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7C7FF3204024860085CEE1 /* String+Utils.swift in Sources */,
 				9AFB0AF8203F0B9A0082EF86 /* UserDetailViewController.swift in Sources */,
 				9A7C7FEC204016700085CEE1 /* EpitechAuth.swift in Sources */,
 				9AFB0ADE203EBFEC0082EF86 /* LoginViewController.swift in Sources */,
@@ -261,6 +401,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A7C7FFE204027DC0085CEE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AFB0AD7203EBFEC0082EF86 /* EpitechDayOne */;
+			targetProxy = 9A7C7FFD204027DC0085CEE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9AFB0ADF203EBFEC0082EF86 /* Main.storyboard */ = {
@@ -282,6 +430,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9A7C8000204027DC0085CEE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBFCDC28D226A46BF436B73 /* Pods-EpitechDayOneTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpitechDayOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredfoc.EpitechDayOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpitechDayOne.app/EpitechDayOne";
+			};
+			name = Debug;
+		};
+		9A7C8001204027DC0085CEE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C51DE41EC91DAE68711403 /* Pods-EpitechDayOneTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EpitechDayOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fredfoc.EpitechDayOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EpitechDayOne.app/EpitechDayOne";
+			};
+			name = Release;
+		};
 		9AFB0AE8203EBFEC0082EF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +605,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9A7C7FFF204027DC0085CEE1 /* Build configuration list for PBXNativeTarget "EpitechDayOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A7C8000204027DC0085CEE1 /* Debug */,
+				9A7C8001204027DC0085CEE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9AFB0AD3203EBFEC0082EF86 /* Build configuration list for PBXProject "EpitechDayOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

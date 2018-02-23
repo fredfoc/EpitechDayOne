@@ -6,4 +6,10 @@ target 'EpitechDayOne' do
     pod 'Alamofire'
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+end
+
+target 'EpitechDayOneTests' do
+    pod 'Firebase/Core'
 end

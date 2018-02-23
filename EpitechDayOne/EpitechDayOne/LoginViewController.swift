@@ -24,21 +24,25 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signInUser(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text {
-            authImp?.signInUser(email: email,
-                                        password: password,
-                                        completion: {[weak self] (result) in
-                                            switch result {
-                                            case .success :
-                                                let homeVC = UIStoryboard(name: "Main",
-                                                                                        bundle: nil).instantiateViewController(withIdentifier: "homeVC")
-                                                self?.navigationController?.pushViewController(homeVC, animated: true)
-                                            case .failure(let error):
-                                                print(error)
-                                            }
-            })
-        }
-        
+        authImp?.signInUser(email: emailTextField.text,
+                            password: passwordTextField.text,
+                            completion: {[weak self] (result) in
+                                switch result {
+                                case .success :
+                                    let homeVC = UIStoryboard(name: "Main",
+                                                              bundle: nil).instantiateViewController(withIdentifier: "homeVC")
+                                    self?.navigationController?.pushViewController(homeVC, animated: true)
+                                case .failure(let error):
+                                    print(error)
+                                }
+        })
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
 }
 
