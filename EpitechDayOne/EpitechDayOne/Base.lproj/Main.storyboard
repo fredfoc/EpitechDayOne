@@ -180,7 +180,7 @@
         <!--Display Results-->
         <scene sceneID="ZuN-yh-iZc">
             <objects>
-                <viewController storyboardIdentifier="homeVC" title="Display Results" id="vbm-RG-DsA" customClass="DisplayResultsViewController" customModule="EpitechDayOne" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeVC" title="Display Results" id="vbm-RG-DsA" customClass="HomeViewController" customModule="EpitechDayOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yvf-CK-3yN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,21 +232,34 @@
                                     <outlet property="delegate" destination="vbm-RG-DsA" id="0qM-5o-MpC"/>
                                 </connections>
                             </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-qP-S7f">
+                                <rect key="frame" x="67" y="98" width="166" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="Dx7-Cj-ZjV"/>
+                                    <constraint firstAttribute="height" constant="30" id="h1M-Vk-NBv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="WVY-gH-ayI" firstAttribute="top" secondItem="tnk-2z-N2c" secondAttribute="top" constant="129" id="Ic3-1f-Kmx"/>
                             <constraint firstItem="WVY-gH-ayI" firstAttribute="centerX" secondItem="Yvf-CK-3yN" secondAttribute="centerX" id="Qcs-WG-N14"/>
+                            <constraint firstItem="WVY-gH-ayI" firstAttribute="leading" secondItem="h7h-qP-S7f" secondAttribute="leading" id="icm-ZZ-Lip"/>
+                            <constraint firstItem="WVY-gH-ayI" firstAttribute="top" secondItem="h7h-qP-S7f" secondAttribute="bottom" constant="21" id="kbX-GM-EHa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tnk-2z-N2c"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="WVY-gH-ayI" id="mlI-aI-UWx"/>
+                        <outlet property="searchTextField" destination="h7h-qP-S7f" id="reg-bb-UKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MjS-vZ-lx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2378" y="90"/>
+            <point key="canvasLocation" x="2376.8000000000002" y="89.505247376311857"/>
         </scene>
         <!--User Detail View Controller-->
         <scene sceneID="HDn-Jc-KjV">

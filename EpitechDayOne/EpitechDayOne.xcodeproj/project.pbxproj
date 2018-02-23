@@ -14,13 +14,16 @@
 		9A7C7FF020401C620085CEE1 /* FakeAuthImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FEF20401C620085CEE1 /* FakeAuthImp.swift */; };
 		9A7C7FF3204024860085CEE1 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C7FF2204024860085CEE1 /* String+Utils.swift */; };
 		9A7C8003204028470085CEE1 /* TestEmailIsValid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */; };
+		9A7C800620404E970085CEE1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800520404E970085CEE1 /* HomePresenter.swift */; };
+		9A7C800820404EA30085CEE1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800720404EA30085CEE1 /* HomeInteractor.swift */; };
+		9A7C800A20404EB00085CEE1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800920404EB00085CEE1 /* HomeRouter.swift */; };
 		9AFB0ADC203EBFEC0082EF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */; };
 		9AFB0ADE203EBFEC0082EF86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */; };
 		9AFB0AE1203EBFEC0082EF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADF203EBFEC0082EF86 /* Main.storyboard */; };
 		9AFB0AE3203EBFEC0082EF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0AE2203EBFEC0082EF86 /* Assets.xcassets */; };
 		9AFB0AE6203EBFEC0082EF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0AE4203EBFEC0082EF86 /* LaunchScreen.storyboard */; };
 		9AFB0AEE203EE54C0082EF86 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0AED203EE54C0082EF86 /* UserModel.swift */; };
-		9AFB0AF4203F040D0082EF86 /* DisplayResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0AF3203F040D0082EF86 /* DisplayResultsViewController.swift */; };
+		9AFB0AF4203F040D0082EF86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0AF3203F040D0082EF86 /* HomeViewController.swift */; };
 		9AFB0AF6203F0A1B0082EF86 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0AF5203F0A1B0082EF86 /* ResultCollectionViewCell.swift */; };
 		9AFB0AF8203F0B9A0082EF86 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0AF7203F0B9A0082EF86 /* UserDetailViewController.swift */; };
 		9AFB0AFA203F26590082EF86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0AF9203F26590082EF86 /* GoogleService-Info.plist */; };
@@ -52,6 +55,9 @@
 		9A7C7FF8204027DC0085CEE1 /* EpitechDayOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpitechDayOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7C7FFC204027DC0085CEE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEmailIsValid.swift; sourceTree = "<group>"; };
+		9A7C800520404E970085CEE1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		9A7C800720404EA30085CEE1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		9A7C800920404EB00085CEE1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		9AFB0AD8203EBFEC0082EF86 /* EpitechDayOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpitechDayOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +66,7 @@
 		9AFB0AE5203EBFEC0082EF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AFB0AE7203EBFEC0082EF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AFB0AED203EE54C0082EF86 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		9AFB0AF3203F040D0082EF86 /* DisplayResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayResultsViewController.swift; sourceTree = "<group>"; };
+		9AFB0AF3203F040D0082EF86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9AFB0AF5203F0A1B0082EF86 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AFB0AF7203F0B9A0082EF86 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		9AFB0AF9203F26590082EF86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -133,6 +139,17 @@
 			path = EpitechDayOneTests;
 			sourceTree = "<group>";
 		};
+		9A7C800420404E580085CEE1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9AFB0AF3203F040D0082EF86 /* HomeViewController.swift */,
+				9A7C800520404E970085CEE1 /* HomePresenter.swift */,
+				9A7C800720404EA30085CEE1 /* HomeInteractor.swift */,
+				9A7C800920404EB00085CEE1 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9AFB0ACF203EBFEC0082EF86 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +173,7 @@
 		9AFB0ADA203EBFEC0082EF86 /* EpitechDayOne */ = {
 			isa = PBXGroup;
 			children = (
+				9A7C800420404E580085CEE1 /* Home */,
 				9A7C7FF1204024740085CEE1 /* Utils */,
 				9A7C7FEA204016540085CEE1 /* Auth */,
 				9AFB0AF9203F26590082EF86 /* GoogleService-Info.plist */,
@@ -166,7 +184,6 @@
 				9AFB0AE4203EBFEC0082EF86 /* LaunchScreen.storyboard */,
 				9AFB0AE7203EBFEC0082EF86 /* Info.plist */,
 				9AFB0AED203EE54C0082EF86 /* UserModel.swift */,
-				9AFB0AF3203F040D0082EF86 /* DisplayResultsViewController.swift */,
 				9AFB0AF5203F0A1B0082EF86 /* ResultCollectionViewCell.swift */,
 				9AFB0AF7203F0B9A0082EF86 /* UserDetailViewController.swift */,
 				9A7C7FE820400B230085CEE1 /* SignViewController.swift */,
@@ -389,13 +406,16 @@
 				9A7C7FF3204024860085CEE1 /* String+Utils.swift in Sources */,
 				9AFB0AF8203F0B9A0082EF86 /* UserDetailViewController.swift in Sources */,
 				9A7C7FEC204016700085CEE1 /* EpitechAuth.swift in Sources */,
+				9A7C800620404E970085CEE1 /* HomePresenter.swift in Sources */,
 				9AFB0ADE203EBFEC0082EF86 /* LoginViewController.swift in Sources */,
 				9AFB0AEE203EE54C0082EF86 /* UserModel.swift in Sources */,
 				9A7C7FE920400B230085CEE1 /* SignViewController.swift in Sources */,
+				9A7C800820404EA30085CEE1 /* HomeInteractor.swift in Sources */,
 				9A7C7FEE204017A70085CEE1 /* EpitechAuthImp.swift in Sources */,
+				9A7C800A20404EB00085CEE1 /* HomeRouter.swift in Sources */,
 				9AFB0AF6203F0A1B0082EF86 /* ResultCollectionViewCell.swift in Sources */,
 				9A7C7FF020401C620085CEE1 /* FakeAuthImp.swift in Sources */,
-				9AFB0AF4203F040D0082EF86 /* DisplayResultsViewController.swift in Sources */,
+				9AFB0AF4203F040D0082EF86 /* HomeViewController.swift in Sources */,
 				9AFB0ADC203EBFEC0082EF86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
