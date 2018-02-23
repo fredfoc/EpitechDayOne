@@ -15,31 +15,35 @@ protocol HomePresenter {
     func dataLoaded(result: HomeResult)
 }
 
-struct HomePresenterImp {
-    private var view: HomeView?
+class HomePresenterImp {
+    private weak var view: HomeView?
     private var interactor: HomeInteractor?
     private var router: HomeRouter?
     private let disposeBag = DisposeBag()
     
-    mutating func setInteractor(interactor: HomeInteractor?) {
+    func setInteractor(interactor: HomeInteractor?) {
         self.interactor = interactor
     }
     
     init(view: HomeView?, router: HomeRouter?) {
         self.view = view
         self.router = router
+    }
+    
+    private func updateView(query: String) {
+        view?.receiveData(results: self.interactor?.getFilteredResults(searchText: query) ?? [UserModel]())
+    }
+    
+    func loadData() {
+        interactor?.loadData()
         view?.searchTextField?.rx
             .text
             .orEmpty
             .debounce(0.3, scheduler: MainScheduler.instance)
             .subscribe(onNext: { query in
-//                self.view?.receiveData(results: self.interactor?.getFilteredResults(searchText: query) ?? [UserModel]())
+                self.updateView(query: query)
             })
             .disposed(by: disposeBag)
-    }
-    
-    func loadData() {
-        interactor?.loadData()
     }
     
     func cellWasSelected(indexPath: IndexPath) {

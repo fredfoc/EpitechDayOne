@@ -18,6 +18,7 @@
 		9A7C800820404EA30085CEE1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800720404EA30085CEE1 /* HomeInteractor.swift */; };
 		9A7C800A20404EB00085CEE1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800920404EB00085CEE1 /* HomeRouter.swift */; };
 		9A7C800D20405A0D0085CEE1 /* ResultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800C20405A0D0085CEE1 /* ResultsManager.swift */; };
+		9A7C800F2040645C0085CEE1 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C800E2040645C0085CEE1 /* HomePresenterTest.swift */; };
 		9AFB0ADC203EBFEC0082EF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */; };
 		9AFB0ADE203EBFEC0082EF86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */; };
 		9AFB0AE1203EBFEC0082EF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AFB0ADF203EBFEC0082EF86 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		9A7C800720404EA30085CEE1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		9A7C800920404EB00085CEE1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		9A7C800C20405A0D0085CEE1 /* ResultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsManager.swift; sourceTree = "<group>"; };
+		9A7C800E2040645C0085CEE1 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
 		9AFB0AD8203EBFEC0082EF86 /* EpitechDayOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpitechDayOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFB0ADB203EBFEC0082EF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AFB0ADD203EBFEC0082EF86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				9A7C7FFC204027DC0085CEE1 /* Info.plist */,
 				9A7C8002204028470085CEE1 /* TestEmailIsValid.swift */,
+				9A7C800E2040645C0085CEE1 /* HomePresenterTest.swift */,
 			);
 			path = EpitechDayOneTests;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7C8003204028470085CEE1 /* TestEmailIsValid.swift in Sources */,
+				9A7C800F2040645C0085CEE1 /* HomePresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
